@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: AppBloc.getInstance().getProviders(context), //[
+      providers: AppBloc.providers,
+      //providers: AppBloc.getInstance().getProviders(context),  //[
       //   appBloc.getProviders(context)
       // BlocProvider<NavigateBloc>(
       //   create: (BuildContext context) =>
